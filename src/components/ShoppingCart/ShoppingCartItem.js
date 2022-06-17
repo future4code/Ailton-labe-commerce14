@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 
 const ItemContainer = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  gap: 4px;
-  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-evenly;
+  justify-content: space-evenly;
 
   p {
     margin: 0;

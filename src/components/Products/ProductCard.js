@@ -4,13 +4,16 @@ import styled from 'styled-components';
 const CardContainer = styled.div`
   border: 1px solid black;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  align-items: space-evenly;
+  justify-content: space-evenly;
 `;
 
 const CardInfo = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 16px;
+  flex-direction: row wrap;
+  align-items: space-evenly;
+  justify-content: space-evenly;
 
   p {
     margin: 4px 0;
@@ -18,7 +21,7 @@ const CardInfo = styled.div`
 `
 
 const AddToCartButton = styled.button`
-  align-self: center;
+  align-self: space-between;
   margin-top: 4px;
 `
 

@@ -3,21 +3,24 @@ import { ProductCard } from './ProductCard'
 import styled from 'styled-components';
 
 const ProductsContainer = styled.div`
-
+  display: flex;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  padding: 0 16px;
 `;
 
 const ProductsHeader = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: space-evenly;
+  justify-content: space-evenly;
   padding: 0 16px;
 `
 
 const ProductsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-evenly;
+  justify-content: space-evenly;
 `
 
 export class Products extends React.Component {
