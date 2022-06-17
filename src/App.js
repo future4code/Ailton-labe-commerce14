@@ -40,7 +40,7 @@ const products = [
 
 class App extends React.Component {
   state = {
-    minFilter: 100,
+    minFilter: 0,
     maxFilter: 1000,
     nameFilter: 'Produto',
     productsInCart: [
