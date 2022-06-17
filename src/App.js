@@ -5,10 +5,15 @@ import { ShoppingCart } from './components/ShoppingCart/ShoppingCart';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  padding: 16px;
-  gap: 8px;
+  display: flex;
+  background-image:url("https://i.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI");
+  align-items: stretch;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  color: white;
+  
 `;
 
 const products = [
@@ -40,7 +45,7 @@ const products = [
 
 class App extends React.Component {
   state = {
-    minFilter: 100,
+    minFilter: 0,
     maxFilter: 1000,
     nameFilter: 'Produto',
     productsInCart: [
